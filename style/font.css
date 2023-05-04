@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap');
+
+@font-face {
+    src: url(../fonts/JustOldFashion.ttf);
+    font-family: font1;
+}
+
+.font1 {
+    font-family: font1;
+}
+
+@font-face {
+    src: url(../fonts/SCRIPTIN.ttf);
+    font-family: font2;
+}
+
+.font2 {
+    font-family: font2;
+}
+
+.h1 {
+    font-family: 'Sono', sans-serif;
+}

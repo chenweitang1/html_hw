@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from</title>
+    <style>
+        .st1 {
+            border-bottom: dashed;
+            margin: 20px;
+            width: 450px;
+            padding: 20px;
+        }
+
+        .typ {
+            text-align: center;
+            width: 450px;
+            margin: 20px;
+        }
+
+        .lab {
+            width: 80px;
+            padding-right: 10px;
+            text-align: right;
+            float: left;
+
+
+        }
+
+        fieldset {
+            width: 500px;
+            margin: 15px auto;
+            border: 2px blue solid;
+            border-radius: 25px;
+            background-color: pink;
+        }
+
+        legend {
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        em {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>個人資料一<em>(必填)</em></legend>
+            <div class="st1">
+                <label for="account1" class="lab">姓名:</label>
+                <input type="text" name="account" id="account1" placeholder="guest" autocomplete="off" autofocus
+                    size="5">
+            </div>
+            <div class="st1">
+                <label for="" class="lab">性別:</label>
+                <label><input type="radio" name="gender" id="" value="male" required>男</label>
+                <label><input type="radio" name="gender" id="" value="female">女</label>
+            </div>
+
+            <div class="st1">
+                <label for="pwd1" class="lab">密碼:</label><input type="password" name="pwd" id="pwd1" maxlength="6"
+                    required>
+            </div>
+            <div class="st1">
+                <label for="" class="lab">生日:</label><input type="date" name="date1" value="2000-01-01" id="">
+            </div>
+            <div class="st1">
+                <label for="" class="">身份證字號:</label><input type="text" name="a123" id="" maxlength="10"
+                    pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\a{8}">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>地址</legend>
+            <div class="st1">
+                <label for="" class="lab">縣市:</label>
+                <select size="2" name="livingin">
+                    <option value="TPE">台北市</option>
+                    <option value="TPH" selected>新北市</option>
+                    <option value="TYU">桃園市</option>
+                </select>
+            </div>
+            <div class="st1">
+                <label for="" class="lab">e-mail:</label><input type="email" name="email" id="">
+            </div>
+            <div class="st1">
+                <label for="" class="lab">完整地址:</label>
+                <input type="text" name="ad2" id="">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>個人資料二</legend>
+            <div class="st1">
+                <label for="" class="lab">興趣:</label>
+                <label><input type="checkbox" name="hobby" id="" value="music">音樂</label>
+                <label><input type="checkbox" name="hobby" id="" value="sport">運動</label>
+                <label><input type="checkbox" name="hobby" id="" value="reading">閱讀</label>
+                <label><input type="checkbox" name="hobby" id="" value="movir">電影</label>
+            </div>
+            <div class="st1">
+                <label for="" class="lab">喜歡的:</label>
+                <input type="text" name="come" id="" list="come_1">
+                <datalist id="come_1">
+                    <option value="電視"></option>
+                    <option value="電腦"></option>
+                    <option value="遊戲機"></option>
+                </datalist>
+            </div>
+            <div class="st1">
+                <label for="" class="lab">檔案:</label>
+                <input type="file" name="file1" id="" multiple>
+            </div>
+            <div class="st1">
+                <label for="memo1" class="lab">意見:</label><textarea cols="40" rows="5" id="memo1" name="memo"
+                    readonly></textarea>
+            </div>
+            <div class="typ">
+                <input type="submit" value="送出">
+                <input type="reset" value="清除">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

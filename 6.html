@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .tr {
+            /* border-collapse: collapse; */
+            border: 2px black solid;
+            width: 600px;
+            border-radius: 20px;
+            border-spacing: 0;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px black solid;
+        }
+
+        thead {
+            background-color: violet;
+            text-transform: capitalize;
+        }
+
+        tbody {
+            background-color: tomato;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: turquoise;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: tomato;
+        }
+
+        tbody tr:hover {
+            color: teal;
+            background-color: blue;
+        }
+
+        tr:first-child th:first-child {
+            border-top-left-radius: 17px;
+        }
+
+        tr:first-child th:last-child {
+            border-top-right-radius: 17px;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 17px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tr">
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>apple1</th>
+                <th>apple2</th>
+                <th>apple3</th>
+                <th>apple4</th>
+            </tr>
+            <tr>
+                <th colspan="2">apple1</th>
+                <!-- <th>apple2</th> -->
+                <th colspan="2">apple3</th>
+                <!-- <th>apple4</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

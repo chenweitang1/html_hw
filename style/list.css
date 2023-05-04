@@ -1,0 +1,19 @@
+.list1 {
+    list-style-type: circle;
+    border: 5pt solid pink;
+    border-radius: 15pt 0 15pt 0;
+}
+
+.list2 {
+    list-style-image: url(../image.depa/p2.jpg);
+}
+
+.in {
+    background-color: brown;
+    list-style-position: inside;
+}
+
+.out {
+    background-color: yellow;
+    list-style-position: outside;
+}

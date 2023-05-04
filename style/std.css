@@ -1,0 +1,43 @@
+h2.st1 {
+    color: aqua;
+    font-style: italic;
+}
+
+.st2 {
+    color: forestgreen;
+    text-transform: capitalize;
+}
+
+.col1 {
+    color: aqua;
+}
+
+.col2 {
+    color: brown;
+}
+
+.sty {
+    font-style: italic;
+}
+
+.text {
+    text-decoration: underline;
+}
+
+h1 {
+    color: red;
+}
+
+.col_1 {
+    color: pink;
+}
+
+#the1 {
+    color: yellow;
+}
+
+p {
+    color: blueviolet;
+    text-decoration: underline;
+    font-style: italic;
+}
